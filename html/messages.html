@@ -1,0 +1,21 @@
+<div>
+  <div>{{name}}</div>
+  <div class="mute">{{recipients}}</div>
+</div>
+
+<div>
+  <form action="/send/{{name}}" method="POST" enctype="multipart/form-data">
+    <label>
+      <textarea name="text" cols="100" rows="3"></textarea>
+    </label>
+    <label>
+      <span>Optional file:</span>
+      <input name="file" type="file">
+    </label>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+<div id="messages">
+  {{messages}}
+</div>

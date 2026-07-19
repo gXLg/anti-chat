@@ -1,0 +1,24 @@
+<form action="/contacts" method="POST" enctype="multipart/form-data">
+  <div>Add new contact</div>
+  <label>
+    <span>Identity:</span>
+    <input name="identity" type="text" autocomplete="off">
+  </label>
+  <label>
+    <span>Display name:</span>
+    <input name="name" type="text" autocomplete="off">
+  </label>
+  <button type="submit">Add</button>
+</form>
+
+<form action="/chat" method="POST" enctype="multipart/form-data">
+  <div>Contact List</div>
+  <div class="mute">To create a new chat, select all wanted contacts from this list, enter the chat name and press "Create chat"</div>
+  <label>
+    <span>Chat name:</span>
+    <input name="chatId" type="text" autocomplete="off">
+  </label>
+  <button type="submit">Create chat</button>
+
+  {{contacts}}
+</form>
