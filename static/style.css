@@ -23,7 +23,7 @@ body {
 }
 
 .mute {
-  font-size: 12pt;
+  font-size: 10pt;
   color: var(--color-muted);
 }
 
@@ -78,7 +78,7 @@ body {
 form {
   margin-top: 10px;
   display: flex;
-  width: 550px;
+  width: min(550px, 90vw);
   flex-direction: column;
   gap: 8px;
 }
@@ -100,7 +100,7 @@ label.checkbox {
 }
 
 label>span {
-  font-size: 10pt;
+  font-size: 8pt;
 }
 
 label>input, label>textarea {
