@@ -1,0 +1,31 @@
+{
+  "name": "anti-chat",
+  "version": "1.0.0",
+  "description": "Own your communication. A self-hosted, decentralized messenger built on Tor with no central servers or accounts.",
+  "homepage": "https://github.com/gXLg/anti-chat#readme",
+  "bugs": {
+    "url": "https://github.com/gXLg/anti-chat/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gXLg/anti-chat.git"
+  },
+  "license": "MIT",
+  "author": "gXLg",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.18.1",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.6.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.2.0",
+    "promise-queue": "^2.2.5",
+    "qrcode": "^1.5.4"
+  }
+}

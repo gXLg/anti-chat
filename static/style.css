@@ -1,0 +1,155 @@
+:root {
+  --color-text:       #080A11;
+  --color-muted:      #333E5B;
+  --color-highlight:  #4D6B89;
+  --color-hover:      #4D83B3;
+  --color-background: #78ADC4;
+  --color-separator:  #51817C;
+}
+
+html, body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-size: 16pt;
+  font-family: Arial, sans-serif;
+}
+
+.mute {
+  font-size: 12pt;
+  color: var(--color-muted);
+}
+
+#heading {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--color-separator);
+}
+
+#top {
+  margin-top: 20px;
+  display: flex;
+}
+
+#top>div {
+  font-size: 24pt;
+  font-weight: bold;
+  flex: 1;
+}
+#top>a {
+  flex: 0;
+}
+
+#content {
+  padding: 30px;
+}
+
+#messages {
+  padding-top: 25px;
+  border-top: 5px solid var(--color-separator);
+  margin-top: 25px;
+  height: 60vh;
+  overflow: scroll;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  border: 2px solid var(--color-separator);
+  border-radius: 8px;
+  padding: 8px;
+  max-width: 80%;
+}
+
+.blob {
+  background-color: var(--color-highlight);
+}
+
+form {
+  margin-top: 10px;
+  display: flex;
+  width: 550px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+label.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+  padding: 2px;
+  border: 1px solid var(--color-separator);
+  border-radius: 2px;
+}
+
+label>span {
+  font-size: 10pt;
+}
+
+label>input, label>textarea {
+  color: var(--color-text);
+  background-color: var(--color-highlight);
+  font-size: 16pt;
+  font-family: Arial, sans-serif;
+
+  padding: 2px;
+  border: 1px solid var(--color-separator);
+  border-radius: 2px;
+}
+
+label>textarea {
+  resize: none;
+}
+
+button {
+  color: var(--color-text);
+  background-color: var(--color-highlight);
+  font-size: 16pt;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+
+  padding: 3px;
+  border: 2px solid var(--color-separator);
+  border-radius: 2px;
+}
+
+label.checkbox:hover, label>input:hover, button:hover, label>textarea:hover {
+  background-color: var(--color-hover);
+}
+
+a {
+  display: inline-block;
+  color: var(--color-text);
+  text-decoration: none;
+
+  border-radius: 8px;
+  padding: 8px;
+}
+a:hover {
+  background-color: var(--color-hover);
+}
+
+a:visited {
+  color: inherit !important;
+}
+
+img {
+  margin-top: 10px;
+}
